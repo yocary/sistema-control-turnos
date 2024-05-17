@@ -23,7 +23,7 @@ FROM node:14
 WORKDIR /app
 
 # Copia los archivos estáticos generados por la construcción de la aplicación Angular desde la etapa anterior
-COPY --from=build /app/dist/sdr /app
+COPY --from=build /app/dist/sistema-control-turnos /app
 
 # Instala un servidor http simple para servir la aplicación Angular
 RUN npm install -g http-server
